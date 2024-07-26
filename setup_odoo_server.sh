@@ -10,7 +10,7 @@ update_server() {
 create_user() {
     echo "Creating a new system user 'odoo17'..."
     sudo adduser odoo17
-    sudo passwd S0larS0ng!
+    sudo passwd odoo17
 }
 
 # Function to install Python 3.10.12 and necessary packages
