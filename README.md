@@ -31,6 +31,7 @@ To set up the Odoo server, follow these steps:
 ./setup_postgresql.sh
 ```
 
+
 **4. Install and Setup Odoo:**
 
 i. Install dependencies and packages using the following command from the project root:
@@ -43,11 +44,14 @@ pip3 install -r requirements.txt
   wget https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6.1-2/wkhtmltox-0.12.6.1-2.almalinux8.x86_64.rpm
   dnf install ./wkhtmltox-0.12.6.1-2.almalinux8.x86_64.rpm
   ```
+
+
 **5. Setup Conf file**
 
 Odoo requires certain information to function, such as the database user, password, locations of add-ons, etc. The configuration file will also have these available. Thus, the first thing we should do is create an Odoo configuration file. You can also find an example configuration file in the Odoo folder, which you can copy to the desired location. Configuration files are typically kept in `/etc`.
 
 **The configuration file should be copied to /etc:**
+
 
 ```bash 
 sudo cp /home/odoo17/debian/odoo.conf /etc/odoo17.conf
@@ -81,6 +85,7 @@ sudo chown $USER:  /var/log/odoo
 
 **6. Odoo service file**
 
+
 We have to create a service to run Odoo. Let’s create a service file ‘`odoo17.service`’ in `/etc/systemd/system`.
 
 ```bash
@@ -106,6 +111,7 @@ sudo chown root: /etc/systemd/system/odoo17.service
 ```
 **7. Run Odoo**
 
+
 ```bash
 sudo systemctl start odoo17.service
 ```
@@ -119,6 +125,7 @@ sudo systemctl status odoo17.service
 
 **Check Odoo logs**
 
+
 Suppose you are experiencing problems with the installation or for any other reason. In that case, you can use the following command to examine the logs of the Odoo platform you have configured. You can view the real-time logs in the terminal by using this command.
 ```bash 
 sudo tail -f /var/log/odoo/odoo17.log
@@ -131,6 +138,7 @@ Use the following command to restart the Odoo service if you have made any modif
 ```bash 
 sudo systemctl restart odoo17.service
 ```
+
 
 **8. Setting up the Nginx Reverse Proxy**
 
@@ -148,7 +156,7 @@ Create a configuration file name: odoosite-perceptiond.conf in `/etc/nginx/conf.
 sudo vi odoosite-perceptiond.conf
 ```
 Then Paste the Following: 
-```ìni
+```nginx
 server {
     listen 80;
     server_name odoosite.perceptiond.click;
@@ -163,6 +171,7 @@ server {
 }
 ```
 And `:wq`to save the file.
+
 
 **Setup SSL certificates**
 ```bash 
