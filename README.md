@@ -199,8 +199,17 @@ Now Odoo application should be accessible at the following domain name:
 
 [https://odoosite.perceptiond.click](https://odoosite.perceptiond.click)
 
+> [!NOTE]
+> If you encounter any internet server errors or find that the server is overloaded, please delete the `odoo17` database from PostgreSQL. Afterwards, manually create a new database from your Odoo site.
+
 *Congrats you have completed the setup!!*
 # :wink: 
 
 > [!TIP]
 > Helpful advice for doing things better or more easily.
+
+
+#### Acknowledgments
+
+    •	Odoo for their amazing software.
+	•	AlmaLinux for their stable and reliable distribution.
