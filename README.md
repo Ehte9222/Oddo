@@ -171,7 +171,13 @@ server {
 }
 ```
 And `:wq`to save the file.
-
+ 
+ > [!NOTE]
+> The Nginx configuration file also exists in the directory. Please run the following command to move odoosite-perceptiond.conf to /etc/nginx/conf.d/:
+```bash
+sudo mv /path/to/odoosite-perceptiond.conf /etc/nginx/conf.d/
+```
+>If you encounter any issues with the configuration file I provided earlier, this file is an updated version and should resolve those problems.
 
 **Setup SSL certificates**
 ```bash 
