@@ -213,12 +213,13 @@ sudo mv /path/to/odoosite-perceptiond.conf /etc/nginx/conf.d/
 > [!NOTE]
 > If you encounter any internet server errors or find that the server is overloaded, please delete the `odoo17` database from PostgreSQL. Afterwards, manually create a new database from your Odoo site.
 
+<br>
+
 ## *Congrats you have completed the setup!!*
 [![Ducky](https://cdn.discordapp.com/attachments/747037852520546334/1267134927082885140/1144402890966974476.gif?ex=66a7aedc&is=66a65d5c&hm=5aaa1ead84c4ec606afa7f47e766a6e865347220a7de0a5788c7fe845ced18c2& "Ducky")](https://cdn.discordapp.com/attachments/747037852520546334/1267134927082885140/1144402890966974476.gif?ex=66a7aedc&is=66a65d5c&hm=5aaa1ead84c4ec606afa7f47e766a6e865347220a7de0a5788c7fe845ced18c2& "Ducky")
-# :wink: 
+# :wink: 🎉  <img width="35" src="https://em-content.zobj.net/source/microsoft-teams/363/technologist-light-skin-tone_1f9d1-1f3fb-200d-1f4bb.png">
 
-> [!TIP]
-> Helpful advice for doing things better or more easily.
+
 
 
 #### Acknowledgments
