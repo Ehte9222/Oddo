@@ -197,8 +197,10 @@ systemctl restart nginx
 
 Now Odoo application should be accessible at the following domain name: 
 
-:fa-hand-o-right: [https://odoosite.perceptiond.click](https://odoosite.perceptiond.click)
+### 👉🏼 [https://odoosite.perceptiond.click](https://odoosite.perceptiond.click)
  
+<br>
+
  > [!TIP]
 > The Nginx configuration file also exists in the directory. Please run the following command to move odoosite-perceptiond.conf to /etc/nginx/conf.d/:
 ```bash
@@ -206,10 +208,12 @@ sudo mv /path/to/odoosite-perceptiond.conf /etc/nginx/conf.d/
 ```
 >If you encounter any issues with the configuration file I provided earlier, this file is an updated version and should resolve those problems. such as `SSL_do_handshake() failed`
 
+<br>
+
 > [!NOTE]
 > If you encounter any internet server errors or find that the server is overloaded, please delete the `odoo17` database from PostgreSQL. Afterwards, manually create a new database from your Odoo site.
 
-*Congrats you have completed the setup!!*
+## *Congrats you have completed the setup!!*
 [![Ducky](https://cdn.discordapp.com/attachments/747037852520546334/1267134927082885140/1144402890966974476.gif?ex=66a7aedc&is=66a65d5c&hm=5aaa1ead84c4ec606afa7f47e766a6e865347220a7de0a5788c7fe845ced18c2& "Ducky")](https://cdn.discordapp.com/attachments/747037852520546334/1267134927082885140/1144402890966974476.gif?ex=66a7aedc&is=66a65d5c&hm=5aaa1ead84c4ec606afa7f47e766a6e865347220a7de0a5788c7fe845ced18c2& "Ducky")
 # :wink: 
 
