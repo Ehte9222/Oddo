@@ -197,7 +197,7 @@ systemctl restart nginx
 
 Now Odoo application should be accessible at the following domain name: 
 
-[https://odoosite.perceptiond.click](https://odoosite.perceptiond.click)
+:fa-hand-o-right: [https://odoosite.perceptiond.click](https://odoosite.perceptiond.click)
  
  > [!TIP]
 > The Nginx configuration file also exists in the directory. Please run the following command to move odoosite-perceptiond.conf to /etc/nginx/conf.d/:
