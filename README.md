@@ -171,13 +171,7 @@ server {
 }
 ```
 And `:wq`to save the file.
- 
- > [!NOTE]
-> The Nginx configuration file also exists in the directory. Please run the following command to move odoosite-perceptiond.conf to /etc/nginx/conf.d/:
-```bash
-sudo mv /path/to/odoosite-perceptiond.conf /etc/nginx/conf.d/
-```
->If you encounter any issues with the configuration file I provided earlier, this file is an updated version and should resolve those problems.
+
 
 **Setup SSL certificates**
 ```bash 
@@ -204,6 +198,13 @@ systemctl restart nginx
 Now Odoo application should be accessible at the following domain name: 
 
 [https://odoosite.perceptiond.click](https://odoosite.perceptiond.click)
+ 
+ > [!TIP]
+> The Nginx configuration file also exists in the directory. Please run the following command to move odoosite-perceptiond.conf to /etc/nginx/conf.d/:
+```bash
+sudo mv /path/to/odoosite-perceptiond.conf /etc/nginx/conf.d/
+```
+>If you encounter any issues with the configuration file I provided earlier, this file is an updated version and should resolve those problems. such as `SSL_do_handshake() failed`
 
 > [!NOTE]
 > If you encounter any internet server errors or find that the server is overloaded, please delete the `odoo17` database from PostgreSQL. Afterwards, manually create a new database from your Odoo site.
